@@ -38,7 +38,9 @@ config :sentry,
   dsn: System.get_env("SENTRY_DSN"),
   tags: %{
     env: "staging"
-  }
+  },
+  use_error_logger: true
+
 
 # Do not print debug messages in production
 config :logger, level: :info
