@@ -34,14 +34,6 @@ config :code_corps, allowed_origins: [
 config :guardian, Guardian,
   secret_key: System.get_env("GUARDIAN_SECRET_KEY")
 
-config :sentry,
-  dsn: System.get_env("SENTRY_DSN"),
-  tags: %{
-    env: "staging"
-  },
-  use_error_logger: true
-
-
 # Do not print debug messages in production
 config :logger, level: :info
 
