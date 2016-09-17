@@ -35,7 +35,8 @@ defmodule CodeCorps.Mixfile do
         :httpoison,
         :arc_ecto,
         :scrivener_ecto,
-        :segment
+        :segment,
+        :sentry
       ]
     ]
   end
@@ -73,7 +74,8 @@ defmodule CodeCorps.Mixfile do
       {:poison, "~> 1.2"},
       {:canary, "~> 0.14.2"}, # Authorization
       {:scrivener_ecto, "~> 1.0"}, # DB query pagination
-      {:segment, github: "stueccles/analytics-elixir"} # Segment analytics
+      {:segment, github: "stueccles/analytics-elixir"}, # Segment analytics
+      {:sentry, "~> 1.0"} # Sentry error tracking
     ]
   end
 
